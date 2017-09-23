@@ -26,6 +26,4 @@ while game.status == 0 do
   game.ask_next_letter
 end
 
-sleep 1
-
 printer.print_status(game)
