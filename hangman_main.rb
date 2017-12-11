@@ -7,6 +7,8 @@ if Gem.win_platform?
   end
 end
 
+require "unicode_utils/downcase"
+
 require_relative "game"
 require_relative "result_printer"
 require_relative "word_reader"

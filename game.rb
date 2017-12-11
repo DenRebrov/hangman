@@ -27,7 +27,9 @@ class Game
 
     while (letter == "") do
       puts "Введите букву"
-      letter = STDIN.gets.encode("UTF-8").downcase.chomp
+      #letter = STDIN.gets.encode("UTF-8").downcase.chomp
+      l = STDIN.gets.encode("UTF-8").chomp
+      letter = UnicodeUtils.downcase(l)
     end
     next_step(letter)
   end
